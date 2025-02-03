@@ -4,7 +4,8 @@ import Card from "./components/card.jsx";
 
 
 const createCards = (contact) => {
-  return <Card name={contact.name} image={contact.image} url={contact.url} about={contact.declaration}/>;
+  return <Card key={contact.id} name={contact.name} image={contact.image} url={contact.url}
+               about={contact.description}/>;
 }
 
 const App = () => {
